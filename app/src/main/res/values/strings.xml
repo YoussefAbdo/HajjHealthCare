@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">HajjHealthCare</string>
+    <string name="welcome_message">Welocome to Hajj Health Care</string>
+    <string name="next">Next</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="notRegistere">Not Registered?</string>
+    <string name="signUp">Sign Up Now</string>
+    <string name="login">Login</string>
+    <string name="signIn">Sign In</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="age">Age</string>
+    <string name="sex">Sex</string>
+    <string name="bloodType">Blood Type</string>
+    <string name="phone">Phone</string>
+    <string name="length">Length</string>
+    <string name="weight">Weight</string>
+    <string name="birth_date">Date</string>
+    <string name="country">Country</string>
+    <string name="relative_name">Relative Name</string>
+    <string name="feedback">Feedback</string>
+    <string name="submit">Submit</string>
+
+    <string name="relative_phone">Relative Phone</string>
+    <string-array name="Languages">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+    <string-array name="Sex">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="blood_types">
+        <item>O</item>
+        <item>A</item>
+        <item>B</item>
+        <item>B</item>
+        <item>AB</item>
+    </string-array>
+</resources>
