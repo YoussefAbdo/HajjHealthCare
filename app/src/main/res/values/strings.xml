@@ -22,8 +22,18 @@
     <string name="relative_name">Relative Name</string>
     <string name="feedback">Feedback</string>
     <string name="submit">Submit</string>
-
+    <string name="finish">Finish</string>
+    <string name="call_summary">Call Summary</string>
+    <string name="medical_consultant">Medical Consultant</string>
+    <string name="medicines">Medicines</string>
+    <string name="delivery_value">Deilevery</string>
     <string name="relative_phone">Relative Phone</string>
+    <string name="total">Total</string>
+    <string name="send_to_email">Send to email</string>
+    <string name="terms_conditions">Terms and Conditions</string>
+    <string name="verfication_code_message">Please enter the code below</string>
+    <string name="code">3 4 7 6 5</string>
+    <string name="get_shipment">Get Shipment</string>
     <string-array name="Languages">
         <item>English</item>
         <item>Arabic</item>

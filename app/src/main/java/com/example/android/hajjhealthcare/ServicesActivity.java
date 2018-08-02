@@ -1,6 +1,8 @@
 package com.example.android.hajjhealthcare;
 
+import android.content.ComponentName;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +29,11 @@ public class ServicesActivity extends AppCompatActivity {
         mDoctorConsultant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ServicesActivity.this, BotActivity.class);
+                //Intent i = new Intent(ServicesActivity.this, BotActivity.class);
+                //startActivity(i);
+                String url = "http://b-055-hajjhealthkey.azurewebsites.net/app/ChatBothajjapp.html";
+                Intent i = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse(url));
                 startActivity(i);
             }
         });
@@ -42,8 +48,12 @@ public class ServicesActivity extends AppCompatActivity {
         mMedicalRelief.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ServicesActivity.this, VideoCallActivity.class);
+                Intent i = new Intent(ServicesActivity.this, VideoCallSummaryActivity.class);
                 startActivity(i);
+//                String url = "http://b-055-hajjhealthkey.azurewebsites.net/app/VOIPhajjapp.html";
+//                Intent i = new Intent(Intent.ACTION_VIEW,
+//                        Uri.parse(url));
+//                startActivity(i);
             }
         });
         mSuggestionsComplains.setOnClickListener(new View.OnClickListener() {

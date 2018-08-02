@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logo1"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_logo1_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
         <activity android:name=".MainActivity">
@@ -28,7 +28,8 @@
         <activity android:name=".MedicalAssistanceActivity" />
         <activity android:name=".SuggestionsComplainsActivity" />
         <activity android:name=".VideoCallSummaryActivity" />
-        <activity android:name=".VerficationActivity"></activity>
+        <activity android:name=".VerficationActivity" />
+        <activity android:name=".VerficationCodeActivity"></activity>
     </application>
 
 </manifest>

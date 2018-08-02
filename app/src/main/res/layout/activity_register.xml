@@ -397,9 +397,17 @@
                 android:inputType="phone" />
         </LinearLayout>
 
+        <CheckBox
+            android:id="@+id/terms_conditions_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_conditions"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+
         <Button
             android:id="@+id/sign_upButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/signUp"
             android:layout_gravity="center_horizontal"

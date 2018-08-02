@@ -5,23 +5,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-public class SuggestionsComplainsActivity extends AppCompatActivity {
+public class VerficationCodeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suggestions_complains);
+        setContentView(R.layout.activity_verfication_code);
 
-        Button mSubmit = (Button) findViewById(R.id.submit);
+        Button mShipmentButton = (Button) findViewById(R.id.get_shipment_button);
 
-        mSubmit.setOnClickListener(new View.OnClickListener() {
+        mShipmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),
-                        "Thank you!",Toast.LENGTH_LONG).show();
+                Intent i = new Intent(VerficationCodeActivity.this, SuggestionsComplainsActivity.class);
+                startActivity(i);
             }
         });
+
     }
+
+
+
 }

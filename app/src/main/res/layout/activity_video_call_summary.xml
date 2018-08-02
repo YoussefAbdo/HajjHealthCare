@@ -1,11 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.hajjhealthcare.VideoCallSummaryActivity"
     android:background="@drawable/background"
+    android:paddingTop="150dp"
+    android:orientation="vertical"
     >
+    <TextView
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="10dp"
+        android:id="@+id/call_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/call_summary"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#4689C8"
+        android:textStyle="bold"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medical_consultant"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#4689C8"
+            android:textStyle="bold"
+            android:width="250dp"/>
+
+        <TextView
+            android:id="@+id/medical_consultant_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 SAR"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medicines"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#4689C8"
+            android:textStyle="bold"
+            android:width="250dp"/>
+
+        <TextView
+            android:id="@+id/medicines_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 SAR"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medical_consultant"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#4689C8"
+            android:textStyle="bold"
+            android:width="250dp"/>
+
+        <TextView
+            android:id="@+id/delivery_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 SAR"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#4689C8"
+            android:textStyle="bold"
+            android:width="250dp"/>
+
+        <TextView
+            android:id="@+id/total_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 SAR"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finish"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>
