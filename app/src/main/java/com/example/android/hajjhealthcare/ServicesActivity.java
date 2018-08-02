@@ -20,7 +20,7 @@ public class ServicesActivity extends AppCompatActivity {
 
         mDoctorConsultant = (Button) findViewById(R.id.doctor_consultant_button);
         mMdedicalAssistance = (Button) findViewById(R.id.medical_assistance_button);
-        mMedicalRelief = (Button) findViewById(R.id.medical_relief_button);
+        mMedicalRelief = (Button) findViewById(R.id.ambulance_button);
         mSuggestionsComplains = (Button) findViewById(R.id.suggestions_complains_button);
 
 

@@ -12,7 +12,7 @@
     >
 
     <TextView
-        android:paddingTop="150dp"
+        android:paddingTop="200dp"
         android:id="@+id/welcome_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

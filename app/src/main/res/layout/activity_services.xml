@@ -12,48 +12,53 @@
     >
 
     <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-        android:layout_weight="1"
-        android:gravity="center"
-    >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
 
     <Button
         android:id="@+id/doctor_consultant_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@mipmap/ic_doctor_consultant_round"
-        android:layout_marginEnd="30dp" />
+        android:width="150dp"
+        android:height="150dp"
+        android:background="@mipmap/ic_doctor_consultant"
+        android:layout_marginBottom="30dp"/>
 
     <Button
         android:id="@+id/medical_assistance_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@mipmap/ic_medical_assissatance" />
-</LinearLayout>
+        android:width="150dp"
+        android:height="150dp"
+        android:background="@mipmap/ic_medical_assistance"
+        />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="1"
-        android:gravity="center"
-
         >
 
-        <Button
-            android:id="@+id/medical_relief_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@mipmap/ic_launcher"
-            android:layout_marginEnd="30dp" />
+    <Button
+        android:id="@+id/ambulance_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:height="150dp"
+        android:background="@mipmap/ic_ambulance"
+        android:layout_marginBottom="30dp"/>
 
-        <Button
-            android:id="@+id/suggestions_complains_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@mipmap/ic_launcher" />
+    <Button
+        android:id="@+id/suggestions_complains_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:height="150dp"
+        android:background="@mipmap/ic_sugesstions_complains"
+        />
+
     </LinearLayout>
-
 </LinearLayout>
