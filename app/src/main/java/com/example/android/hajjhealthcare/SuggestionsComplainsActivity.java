@@ -21,6 +21,9 @@ public class SuggestionsComplainsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),
                         "Thank you!",Toast.LENGTH_LONG).show();
+
+                Intent i = new Intent(SuggestionsComplainsActivity.this, ServicesActivity.class);
+                startActivity(i);
             }
         });
     }

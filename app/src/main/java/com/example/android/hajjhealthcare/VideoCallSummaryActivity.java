@@ -2,6 +2,7 @@ package com.example.android.hajjhealthcare;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -31,13 +32,13 @@ public class VideoCallSummaryActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(VideoCallSummaryActivity.this);
-                alertDialogBuilder.setMessage("Are you ready to get the drone?");
+                alertDialogBuilder.setMessage("The Drone has been arrived!\nCan you see Drone #D13?");
                         alertDialogBuilder.setPositiveButton("YES",
                                 new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface arg0, int arg1) {
-                                        Toast.makeText(VideoCallSummaryActivity.this,
-                                                "Drone is on it's way!",Toast.LENGTH_LONG).show();
+//                                        Toast.makeText(VideoCallSummaryActivity.this,
+//                                                "",Toast.LENGTH_LONG).show();
 
 
                                         Intent i = new Intent(VideoCallSummaryActivity.this, VerficationCodeActivity.class);
@@ -50,7 +51,6 @@ public class VideoCallSummaryActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(VideoCallSummaryActivity.this,
                                 "Please stay where you have submit your request!",Toast.LENGTH_LONG).show();
-                        finish();
                     }
                 });
 
@@ -60,10 +60,16 @@ public class VideoCallSummaryActivity extends AppCompatActivity {
             }
         });
 
+
+
         String url = "http://b-055-hajjhealthkey.azurewebsites.net/app/VOIPhajjapp.html";
-        Intent i = new Intent(Intent.ACTION_VIEW,
-                Uri.parse(url));
-        startActivity(i);
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        intent.setComponent(new ComponentName("org.mozilla.firefox", "org.mozilla.firefox.App"));
+        this.startActivity(intent);
+
+//        Intent i = new Intent(Intent.ACTION_VIEW,
+//                Uri.parse(url));
+//        startActivity(i);
 
 
 

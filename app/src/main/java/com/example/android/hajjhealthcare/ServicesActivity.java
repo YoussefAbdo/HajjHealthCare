@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class ServicesActivity extends AppCompatActivity {
 
@@ -16,12 +17,12 @@ public class ServicesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_services);
 
         Button mDoctorConsultant;
-        Button mMdedicalAssistance;
+        Button mMedicalAssistance;
         Button mMedicalRelief;
         Button mSuggestionsComplains;
 
         mDoctorConsultant = (Button) findViewById(R.id.doctor_consultant_button);
-        mMdedicalAssistance = (Button) findViewById(R.id.medical_assistance_button);
+        mMedicalAssistance = (Button) findViewById(R.id.medical_assistance_button);
         mMedicalRelief = (Button) findViewById(R.id.ambulance_button);
         mSuggestionsComplains = (Button) findViewById(R.id.suggestions_complains_button);
 
@@ -38,7 +39,7 @@ public class ServicesActivity extends AppCompatActivity {
             }
         });
 
-        mMdedicalAssistance.setOnClickListener(new View.OnClickListener() {
+        mMedicalAssistance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(ServicesActivity.this, MedicalAssistanceActivity.class);
@@ -48,12 +49,8 @@ public class ServicesActivity extends AppCompatActivity {
         mMedicalRelief.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ServicesActivity.this, VideoCallSummaryActivity.class);
-                startActivity(i);
-//                String url = "http://b-055-hajjhealthkey.azurewebsites.net/app/VOIPhajjapp.html";
-//                Intent i = new Intent(Intent.ACTION_VIEW,
-//                        Uri.parse(url));
-//                startActivity(i);
+                Toast.makeText(ServicesActivity.this,
+                        "We have got your location!",Toast.LENGTH_LONG).show();
             }
         });
         mSuggestionsComplains.setOnClickListener(new View.OnClickListener() {

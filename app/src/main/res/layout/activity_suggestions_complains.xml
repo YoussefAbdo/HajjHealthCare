@@ -11,6 +11,17 @@
     android:gravity="center"
     >
 
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thanks_feedback_message"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#4689C8"
+
+        android:textStyle="bold"
+        android:paddingBottom="100dp"/>
+
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"

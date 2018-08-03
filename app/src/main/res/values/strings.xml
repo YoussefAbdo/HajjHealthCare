@@ -34,6 +34,7 @@
     <string name="verfication_code_message">Please enter the code below</string>
     <string name="code">3 4 7 6 5</string>
     <string name="get_shipment">Get Shipment</string>
+    <string name="thanks_feedback_message">Thank you for using Hajj Health Care!\n Please leave your feedback!</string>
     <string-array name="Languages">
         <item>English</item>
         <item>Arabic</item>
