@@ -33,9 +33,10 @@ public class ServicesActivity extends AppCompatActivity {
                 //Intent i = new Intent(ServicesActivity.this, BotActivity.class);
                 //startActivity(i);
                 String url = "http://b-055-hajjhealthkey.azurewebsites.net/app/ChatBothajjapp.html";
-                Intent i = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse(url));
-                startActivity(i);
+
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                intent.setComponent(new ComponentName("org.mozilla.firefox", "org.mozilla.firefox.App"));
+                startActivity(intent);
             }
         });
 

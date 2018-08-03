@@ -67,9 +67,6 @@ public class VideoCallSummaryActivity extends AppCompatActivity {
         intent.setComponent(new ComponentName("org.mozilla.firefox", "org.mozilla.firefox.App"));
         this.startActivity(intent);
 
-//        Intent i = new Intent(Intent.ACTION_VIEW,
-//                Uri.parse(url));
-//        startActivity(i);
 
 
 
