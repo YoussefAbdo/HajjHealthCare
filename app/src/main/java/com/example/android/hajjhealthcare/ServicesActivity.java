@@ -62,6 +62,4 @@ public class ServicesActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }
