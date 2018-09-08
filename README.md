@@ -20,7 +20,7 @@ We have came up with a idea to enhance and speed up the facility of healthcare i
 
 <ul>
 	<li>Video call with doctors</li>
-	<li>Requesting and delivering medicine using drons</li>
+	<li>Requesting and delivering medicine using drones</li>
 	<li>Medical Chat Bot</li>
   </ul>
 
